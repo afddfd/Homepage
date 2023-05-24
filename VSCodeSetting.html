@@ -1,0 +1,56 @@
+<!-- VSCodeSetting.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VS Code 설정</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>VS Code 설정</h1>
+    <p>
+    <a href="https://vscode.dev/">VS Code 웹에서 사용하기</a>
+     <a href="https://code.visualstudio.com/">VS Code 홈페이지</a>
+     <a href="https://az764295.vo.msecnd.net/stable/
+    b3e4e68a0bc097f0ae7907b217c1119af9e03435/VSCodeUserSetup-x64-1.78.2.exe">바로 다운로드</a><br>
+    </p>
+    <p>
+    Windows에서 Dev-C++을 컴파일러 포함 옵션으로 설치하여 사용한다고 가정합니다.
+    컴파일러를 추가 설치하지 않고 이미 설치된 컴파일러를 재사용할 것입니다.<br>디스크 공간 약 1 GB가 사용됩니다.
+    </p><p>
+        사전 작업 - OS 설정
+    <br>sysdm.cpl - 고급 - 환경 변수 - 시스템 변수 - PATH에
+        C:\Program Files (x86)\Embarcadero\Dev-Cpp\TDM-GCC-64\bin 추가
+    <br>
+        언어 변경
+    <br>Ctrl+Shift+P - Configure Display Language 검색해서 한국어 선택, 재시작.
+    <br>기본 환경설정
+    <br>Ctrl+, Font Size 28 Font Family "Consolas, 나눔고딕코딩, 'Courier New', monospace"
+    <br>확장 프로그램 설치
+        Ctrl+Shift+X - 아래 다섯 개 확장 프로그램 설치
+    <br>C/C++ / C/C++ Extension Pack / Live Preview / BrainFuck Syntax - Live Preview는 HTML 확인용
+    <br>폴더 설정과 C 컴파일러 설정
+    <br>적당히 폴더를 선택하고 "예, 작성자를 신뢰합니다." 선택
+    <br>Ctrl+Shift+P - C/C++ 구성 선택 - 구성 편집(UI)
+    <br>대부분은 건드릴 것이 없으나, 여기서 컴파일러 경로와 커스텀 헤더파일 설정, IntelliSense 모드, C/C++ 표준을 설정 가능.
+    <br>.vscode 폴더 내에 tasks.json 파일을 만들고 https://bit.ly/1158-5 내용 적당히 붙여넣기.
+    <br>지금은 C++를 다루지 않으므로 C++ 컴파일 부분은 주석 처리.
+    <br>바로 가기 설정. Ctrl+K Ctrl+S, 우측 상단 "바로 가기 키 열기"
+    <br>내용을 이것으로 변경
+    <br>// 키 바인딩을 이 파일에 넣어서 기본값을 덮어씁니다.
+    <br>[
+    <br>    //컴파일
+    <br>    { "key": "F9", "command": "workbench.action.tasks.build" },
+    <br>    
+    <br>    //실행
+    <br>    { "key": "F10", "command": "workbench.action.tasks.test" }
+    <br>]<br>
+    <br>Ctrl+Shift+P 터미널: 기본 프로필 선택 - cmd.exe
+    <br>
+    <br>이제 Dev-C++과 동일하게 F9을 눌러 컴파일, F10을 눌러 실행 하시면 됩니다.
+        
+    <br>참고 - <a href="https://webnautes.tistory.com/1158">https://webnautes.tistory.com/1158</a>
+        
+    <br>기타 단축키 - Ctrl+K Ctrl+T Theme Settings, Ctrl+Shift+C Open Terminal
+</body>
+</html>
+<!-- https://webnautes.tistory.com/1158 -->

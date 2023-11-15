@@ -1,0 +1,9 @@
+/* style.css */
+h3{color:#0000f0;}
+#menubar{background:#5B8CEB;}
+#menubar ul{margin:0;padding:0;}
+#menubar ul li{display:inline-block;list-style-type:none;
+padding:0px 15px;}
+#menubar ul li a{color:black;text-decoration:none;}
+#menubar ul li a:hover{color:#6400ff;}
+/* 일부만 적용하도록 의도됨. hover는 In-line CSS 사용불가 */
